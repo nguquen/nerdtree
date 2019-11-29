@@ -232,7 +232,7 @@ function! NERDTreeMoveNode()
             endif
         endif
 
-        call curNode.putCursorHere(1, 0)
+        wincmd w
 
         redraw!
     catch /^NERDTree/
@@ -422,4 +422,3 @@ function! NERDTreeExecuteFileLinux()
 endfunction
 
 " vim: set sw=4 sts=4 et fdm=marker:
-
